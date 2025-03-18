@@ -4,21 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba corta4</title>
+
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="config.css">
+    
 </head>
-<body>
-    <div class="aling1">
-        <div></div>
-        <div class="circulo"></div>
-    </div>
+<body class="body1">
+    <header class="header1">
 
-    <div class="cuadra2">
-        <div></div>
-        <div></div>
-        
-    </div>
-    <div class="info"></div>
+      <div class="aling1">
+        <img src="data:image/png;base64,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" alt="" class="foto1">
+      </div>
+      <div class="aling2"></div>
+    </header>
+
+    <section>
+        <div class="aling3">
+            <div class="aling4">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSTKyQllhsqrLY7uBWMPqCoBRUhI8AXZQWMQ&s" alt="Prada" class="foto2">
+            </div>
+            <h2 class="titulo1"> Titulo de componentes</h2>
+            <h2 class="titulo2"> más textoo</h2>
+            <div class="aling5">
+                <a href="Modulos/seccion1/seccion1.html">Más información</a>
+
+            </div>
+        </div>
+    </section>
+
+    
 
 
     
